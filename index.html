@@ -5,11 +5,11 @@
         <meta name="viewport" content="width=device-width,initial-scale=1">
         <meta name="description" content="ESTUDIO E15 — Arquitectura, construcción y proyectos. Conoce nuestra propuesta y solicita información.">
         <title>ESTUDIO E15 | Arquitectura · Construcción · Proyectos</title>
-        <link rel="stylesheet" href="styles.css">
+        <link rel="stylesheet" href="styles.css?v=20261124">
     </head>
     <body>
         <header class="header">
-            <a href="#inicio" class="brand" aria-label="ESTUDIO E15 inicio"><img src="assets/logo-original.jpg" alt="ESTUDIO E15 — Arquitectura, Construcción, Proyectos"></a><button class="menu" aria-label="Abrir menú" aria-expanded="false">☰</button>
+            <a href="#inicio" class="brand" aria-label="ESTUDIO E15 inicio"><img src="assets/logo-original.png" alt="ESTUDIO E15 — Arquitectura, Construcción, Proyectos"></a><button class="menu" aria-label="Abrir menú" aria-expanded="false" aria-controls="nav">☰</button>
             <nav id="nav">
                 <a href="#inicio">Inicio</a><a href="#estudio">Estudio</a><a href="#servicios">Servicios</a><a href="#proyectos">Proyectos</a><a href="#contacto">Contacto</a>
             </nav>
@@ -26,23 +26,21 @@
                     </div>
                 </div>
             </section>
-            <div class="service-strip pinegrow-ui-helper-relative">
-                <span style="grid-area:auto / 1 / auto / 5; text-align: center; font-size: 379x0; line-height: -5px; font-weight: normal;">     01 / Arquitectura&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 02 / Construcción&nbsp; &nbsp; &nbsp; &nbsp;03 / Proyectos&nbsp; &nbsp; &nbsp; &nbsp;04 / Reformas*</span>
+            <div class="service-strip">
+                <span>01 / Arquitectura</span><span>02 / Construcción</span><span>03 / Proyectos</span><span>04 / Reformas</span>
             </div>
             <section class="intro section" id="estudio">
-                <div>
+                <div class="intro-copy">
                     <span class="eyebrow ink">ESTUDIO E15</span>
-                    <h2 style="font-weight: 700; font-size: 33px;">Quiénes somos</h2>
+                    <h2>Quiénes somos</h2>
                     <p>Somos un estudio dedicado a la arquitectura, la construcción y el desarrollo de proyectos, donde combinamos creatividad, funcionalidad y compromiso para transformar ideas en espacios únicos.</p>
-                    <p><span style="font-weight: 600; font-size: 22px;"><b>Nuestra misión</b></span></p>
-                    <p>Desarrollar soluciones arquitectónicas y constructivas de calidad, adaptadas a las necesidades de cada cliente.
-
-</p>
-                    <p><b style="font-size: 22px; font-weight: 600;"><b>Nuestra visión</b></b></p>
-                    <p>Ser un estudio referente por la innovación, la excelencia y la confianza, creando espacios que mejoren la calidad de vida de las personas.</p>
+                    <div class="intro-values">
+                        <article><h3>Nuestra misión</h3><p>Desarrollar soluciones arquitectónicas y constructivas de calidad, adaptadas a las necesidades de cada cliente.</p></article>
+                        <article><h3>Nuestra visión</h3><p>Ser un estudio referente por la innovación, la excelencia y la confianza, creando espacios que mejoren la calidad de vida de las personas.</p></article>
+                    </div>
                     <a class="text-link" href="#contacto">Conversemos sobre tu idea ↗</a>
                 </div>
-                <div class="intro-photo"></div>
+                <div class="intro-photo" role="img" aria-label="Imagen de inspiración arquitectónica"></div>
             </section>
             <section class="section services" id="servicios">
                 <div class="section-heading">
@@ -69,7 +67,7 @@
                     </article>
                     <article>
                         <b>04</b>
-                        <h3>Reformas*</h3>
+                        <h3>Reformas</h3>
                         <p>Transformación y actualización de espacios.</p>
                     </article>
                 </div>
@@ -78,7 +76,7 @@
                 <div class="section-heading">
                     <div>
                         <span class="eyebrow ink">PORTAFOLIO</span>
-                        <h2>Proyectos destacados</h2>
+                        <h2>Inspiración arquitectónica</h2>
                     </div>
                 </div>
                 <div class="project-grid">
@@ -92,13 +90,14 @@
                             <h3>Diseño y materialidad</h3>
                         </div>
                     </article>
-                    <article class="project-card project-three"></article>
+                    <article class="project-card project-three"><div><h3>Detalles que importan</h3></div></article>
                 </div>
+                <p class="disclaimer">Imágenes de referencia e inspiración arquitectónica.</p>
             </section>
             <section id="contacto" class="contact">
                 <div>
                     <span class="eyebrow">TU PRÓXIMO PROYECTO</span>
-                    <h2>Contactanos&nbsp;</h2>
+                    <h2>Contáctanos</h2>
                     <p>Cuéntanos qué tienes en mente. Estamos disponibles para conversar.</p>
                 </div>
                 <div class="contact-actions">
@@ -107,7 +106,7 @@
             </section>
         </main>
         <footer>
-            <span>© <span id="year"></span> ESTUDIO E15</span><span>Arquitectura · Construcción · Proyectos</span><span>Sitio Desarrollado por <a href="https://www.ziegenx.com" target="_blank">ZIEGENX</a></span>
+            <span>© <span id="year"></span> ESTUDIO E15</span><span>Arquitectura · Construcción · Proyectos</span><span>Sitio desarrollado por <a class="credit-link" href="https://ziegenx.com/" target="_blank" rel="noopener noreferrer">ZIEGENX</a></span>
         </footer>
         <script src="script.js"></script>
     </body>
